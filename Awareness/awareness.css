@@ -62,3 +62,39 @@ img {
     padding: 10px;
     width: 100%;
 }
+
+hr {
+    margin: 5em 5em 5em 5em;
+    opacity: 0;
+}
+
+
+
+.video-area {
+    display: flex;
+    margin-left: 4em;
+}
+
+.video-float {
+    display: flex;
+    flex: 1;
+    width: fit-content;
+    z-index: 9999;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.description {
+    flex: 2;
+    margin-left: 1em;
+}
+
+.description h2 {
+    color: blue;
+}
+
+.description p {
+    max-width: 600px;
+}
