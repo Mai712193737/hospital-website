@@ -1,0 +1,64 @@
+body, html {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.hero::before {
+    content: "";
+    z-index: -10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/Awareness/images/hand-washing.png') no-repeat center center/cover;
+    filter: blur(10px) brightness(60%);
+}
+
+.hero-overlay {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 0.3em;
+}
+
+.hero p {
+    font-size: 1.5em;
+    opacity: 0.7;
+}
+
+.hero a {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(0, 118, 235);
+    font-size: 2em;
+    font-weight: 700;
+    padding: 0.3em 0.9em 0.3em 0.9em;
+    border-style: none;
+    border-radius: 0.3em;
+    margin-top: 100px;
+    transition: 20ms;
+}
+
+.hero a:hover {
+    background-color: rgb(0, 92, 184);
+}
+
+img {
+    padding: 10px;
+    width: 100%;
+}
