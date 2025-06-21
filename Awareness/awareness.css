@@ -1,7 +1,16 @@
-body, html {
+html {
     height: 100%;
+  }
+  
+  body {
+    min-height: 100%;
+    background-image: linear-gradient(to bottom right, #0062ff, #3b5fff, #acacac);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     font-family: Arial, Helvetica, sans-serif;
-}
+  }
+  
 
 .hero {
     display: flex;
@@ -23,12 +32,19 @@ body, html {
     width: 100%;
     height: 100%;
     background: url('/Awareness/images/hand-washing.png') no-repeat center center/cover;
-    filter: blur(10px) brightness(60%);
+    filter: brightness(60%);
 }
 
 .hero-overlay {
     position: relative;
-    z-index: 1;
+    z-index: 10;
+    width: 100%;
+    padding: 50px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
 }
 
 .hero h1 {
@@ -72,7 +88,18 @@ hr {
 
 .video-area {
     display: flex;
+    flex-wrap: wrap;
     margin-left: 4em;
+    position: relative;
+    z-index: 10;
+    width: calc(100% - 4em);
+    max-width: fit-content;
+    padding: 50px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
 }
 
 .video-float {
@@ -83,7 +110,7 @@ hr {
     border: 2px solid #ccc;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .description {
@@ -92,7 +119,7 @@ hr {
 }
 
 .description h2 {
-    color: blue;
+    color: rgb(255, 255, 255);
 }
 
 .description p {
