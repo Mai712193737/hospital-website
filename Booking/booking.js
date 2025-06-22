@@ -14,6 +14,12 @@ form.addEventListener("submit", (e) => {
         e.preventDefault();
         alert("Please fill in all fields.");
     }
+    else {
+        e.preventDefault();
+        alert("booking finished successfully!");
+        window.location.href = "../Home/home.html";
+    }
+    
 });
 
 function checkInput(input) {
