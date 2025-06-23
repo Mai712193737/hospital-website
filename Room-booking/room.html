@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="room.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Pharmacy</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="header" id="header">
+        <div class="container">
+          <a href="#" class="logo"><img src="../Home/OIP.webp" /></a>
+          <ul class="main-nav">
+            <li>
+              <a href="../Home/home.html"
+                ><i class="fa-solid fa-house"></i>Home</a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-concierge-bell"></i>Services</a>
+            </li>
+            <li>
+              <a href="../Lab/lab.html"><i class="fas fa-vials"></i>Lab</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-pills"></i>Pharmacy</a>
+            </li>
+            <li>
+              <a href="../Doctors/doctors.html"
+                ><i class="fas fa-user-md"></i>Doctors</a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-hand-holding-heart"></i>Donations</a>
+            </li>
+            <li>
+              <a href="../Awareness/awareness.html"
+                ><i class="fas fa-bullhorn"></i>Awareness</a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-trophy"></i>Achievements</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <h2>Available Medicines</h2>
+    <div class="cards-container">
+      <!-- 1 -->
+      <div class="card">
+        <img
+          src="./images/general.jpg"
+          alt="general"
+        />
+        <h3>General ward</h3>
+        <p>Price: 1,500 - 2,000 EGP/night</p>
+        <p>Availablity: <span style="color: rgb(0, 189, 22);">Available</span></p>
+        <a
+          href="../Room-booking/room.html"
+          class="add-to-cart"
+          data-product-id="paracetamol"
+        >
+          <i class="fas fa-cart-plus"></i> Book Now
+        </a>
+      </div>
+
+      <!-- 2 -->
+      <div class="card">
+        <img
+          src="./images/semi-private.jpg"
+          alt="semi private"
+        />
+        <h3>Semi-private ward</h3>
+        <p>Price: 2,500-400 EGP/night</p>
+        <p>Availablity: <span style="color: rgb(0, 189, 22);">Available</span></p>
+        <a
+          href="../Room-booking/room.html"
+          class="add-to-cart"
+          data-product-id="amoxicillin"
+        >
+          <i class="fas fa-cart-plus"></i> Book Now
+        </a>
+      </div>
+
+      <!-- 3 -->
+      <div class="card">
+        <img
+          src="./images/private.jpg"
+          alt="Private"
+        />
+        <h3>Private room</h3>
+        <p>Price: 17,000 - 18,500 EGP/night</p>
+        <p>Availabilty: <span style="color: rgb(0,189,22);">Available</span></p>
+        <a
+          href="../Room-booking/room.html"
+          class="add-to-cart"
+          data-product-id="diclofenac"
+        >
+          <i class="fas fa-cart-plus"></i> Book Now
+        </a>
+      </div>
+
+      <!-- 4 -->
+      <div class="card">
+        <img
+          src="./images/deluxe.jpeg"
+          alt="deluxe"
+        />
+        <h3>Deluxe</h3>
+        <p>Price: 20,000 - 22,000 EGP/night</p>
+        <p>Availabilty: <span style="color: rgb(0,189,22);">Available</span></p>
+        <a
+          href="../Room-booking/room.html"
+          class="add-to-cart"
+          data-product-id="vitamin-c"
+        >
+          <i class="fas fa-cart-plus"></i> Book Now
+        </a>
+      </div>
+
+      <!-- 5 -->
+      <div class="card">
+        <img
+          src="./images/vip.jpg"
+          alt="vip"
+        />
+        <h3>VIP</h3>
+        <p>Price: 27,000 - 30,000 EGP/night</p>
+        <p>Availabilty: <span style="color: rgb(0,189,22);">Available</span></p>
+        <a
+          href="../Room-booking/room.html"
+          class="add-to-cart"
+          data-product-id="ibuprofen"
+        >
+          <i class="fas fa-cart-plus"></i> Book Now
+        </a>
+      </div>
+
+      <!-- 6 -->
+      <div class="card">
+        <img
+          src="./images/royal.jpeg"
+          alt="Omeprazole"
+        />
+        <h3>Royal room</h3>
+        <p>Type: Acid Reducer</p>
+        <p>Price: NA</p>
+        <p>Availabilty: <span style="color: red;">Unavailable</span></p>
+      </div>
+
+      
+    <!-- Footer -->
+    <section class="footer">
+      <ul class="social">
+        <li>
+          <a href="#"><i class="fas fa-info-circle"></i>About Us</a>
+        </li>
+        <li>
+          <a href="../contact/contact.html"
+            ><i class="fas fa-phone"></i>Contact Us</a
+          >
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-question-circle"></i>FAQ</a>
+        </li>
+      </ul>
+      <p class="copyright">
+        &copy; 2025 <a href="#">Al Shifaa Hospital</a> All Right Reserved
+      </p>
+    </section>
+    <script src="pharmacy.js"></script>
+    <script src="./Cart/cart.js"></script>
+  </body>
+</html>
