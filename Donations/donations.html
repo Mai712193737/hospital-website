@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Booking</title>
+    <title>Donations</title>
     <!-- Style CSS -->
     <link rel="stylesheet" href="donations.css" />
     <!-- Font Awesome -->
@@ -15,17 +15,17 @@
   <body>
     <div class="overlay">
       <div class="form-container">
-        <h1>Booking</h1>
+        <h1>Donations</h1>
         <form action="#" id="form">
           <div class="input-group">
-            <label for="username">Username</label>
+            <label for="username">Full name</label>
             <input
               type="text"
               placeholder="ex: John smith"
             />
           </div>
 
-          <!-- Password -->
+
           <div class="input-group">
             <label for="password">Mobile number</label>
             <input
@@ -60,20 +60,8 @@
                 <option class="clinic-select">Laboratory services</option>
             </select>
           </div>
-          <div class="input-group">
-            <label for="Doctor">Doctor</label>
-            <select name="clinic" id="clinic">
-                <option disabled selected>Select a doctor</option>
-                <option class="clinic-select">Dr. Ahmed Mohamed</option>
-                <option class="clinic-select">Dr. Abdallah Mohammed</option>
-                <option class="clinic-select">Dr. Omar Ahmed</option>
-                <option class="clinic-select">Dr. Sara Khaled</option>
-                <option class="clinic-select">Dr. Asmaa Ahmed</option>
-                <option class="clinic-select">Dr. Aml Ibrahem</option>
-            </select>
-          </div>
-
-          <div class="input-group">
+        
+          <div class="input-group" hidden>
             <label for="date">Date & Time</label>
             <input
               type="date"
