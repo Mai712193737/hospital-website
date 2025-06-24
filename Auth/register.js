@@ -2,6 +2,11 @@ const form = document.querySelector("form");
 const passwordInput = document.getElementById("password");
 const togglePassword = document.getElementById("togglePassword");
 
+function isValidPassword(password) {
+  const regex = /^(?=.*\d)(?=.*[\W_]).{8,}$/;
+  return regex.test(password);
+}
+
 // Toggle password visibility
 togglePassword?.addEventListener("click", function () {
   const icon = this.querySelector("i");
@@ -21,11 +26,16 @@ form?.addEventListener("submit", (e) => {
 
   const name = document.getElementById("name").value.trim();
   const email = document.getElementById("email").value.trim();
-  const password = document.getElementById("password").value.trim();
+  const password = passwordInput.value.trim();
   const terms = document.querySelector('input[name="terms"]').checked;
 
   if (!name || !email || !password) {
     alert("❌ Please fill in all fields.");
+    return;
+  }
+
+  if (!isValidPassword(password)) {
+    alert("❌ Password must be at least 8 characters long, include at least one number and one symbol.");
     return;
   }
 
@@ -34,7 +44,6 @@ form?.addEventListener("submit", (e) => {
     return;
   }
 
-  // ✅ Save to localStorage
   localStorage.setItem("registeredName", name);
   localStorage.setItem("registeredPassword", password);
 
