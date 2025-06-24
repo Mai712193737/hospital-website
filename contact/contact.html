@@ -1,28 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact Us</title>
-  <link rel="stylesheet" href="contact.css" />
-</head>
-<body>
-  <div class="contact-container">
-    <h1>CONTACT US</h1>
-    <form class="contact-form">
-      <div class="form-row">
-        <input type="text" placeholder="First name" required />
-        <input type="text" placeholder="Last name" required />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Linking external CSS files -->
+    <link rel="stylesheet" href="../Auth/style.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <title>Contact US</title>
+  </head>
+  <body>
+    <div class="overlay">
+      <div class="form-container">
+        <h1><i class="fa-solid fa-comments"></i> Get in Touch</h1>
+        <a href="https://maps.app.goo.gl/kqeGto6vYaEystMU8" target="_blank">
+          <img src="location.png" alt="" class="form-image">
+        </a>
+        <p>Phone number: 4730131</p>
+        <br>
+        <hr>
+        <br>
+        <form action="#">
+          <div class="input-group">
+            <label for="name">Your Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Enter your name"
+            />
+            <span class="icon"><i class="fa-solid fa-user"></i></span>
+          </div>
+          <div class="input-group">
+            <label for="email">Your Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="Enter your email"
+            />
+            <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+          </div>
+          <div class="input-group">
+            <label for="message">Your Message</label>
+            <textarea
+              id="message"
+              name="message"
+              required
+              placeholder="Tell us what's on your mind"
+              rows="5"
+            ></textarea>
+            <span class="icon"><i class="fa-solid fa-pen"></i></span>
+          </div>
+          <button type="submit">
+            <i class="fa-solid fa-paper-plane"></i> Send Your Message
+          </button>
+        </form>
+        <p class="signup-link">
+          <i class="fa-solid fa-cart-shopping"></i> Return to
+          <a href="../Home/home.html">Home</a>
+        </p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
       </div>
-      <div class="form-row">
-        <input type="tel" placeholder="Mobile number" required />
-        <input type="email" placeholder="Email address" required />
-      </div>
-      <textarea placeholder="Write your message here..." rows="6" required></textarea>
-      <button onclick="window.location.href = '../Home/home.html'">
-        <span class="icon">↳</span> Submit
-      </button>
-    </form>
-  </div>
-</body>
+    </div>
+    <!-- Footer -->
+    <section class="footer">
+      <ul class="social">
+        <li>
+          <a href="#"><i class="fas fa-info-circle"></i>About Us</a>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-phone"></i>Contact Us</a>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-question-circle"></i>FAQ</a>
+        </li>
+      </ul>
+      <p class="copyright">
+        &copy; 2025 <a href="#">Al Shifaa Hospital</a> All Right Reserved
+      </p>
+    </section>
+  </body>
 </html>
