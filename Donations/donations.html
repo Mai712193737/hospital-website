@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donations</title>
+    <link rel="stylesheet" href="donations.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="overlay">
+      <div class="form-container">
+        <h1>Donations</h1>
+        <form action="#" id="form">
+          <div class="input-group">
+            <label for="username">Full name</label>
+            <input type="text" placeholder="ex: John smith" />
+          </div>
+
+          <div class="input-group">
+            <label for="password">Mobile number</label>
+            <input type="number" placeholder="ex: 01145561234" />
+          </div>
+
+          <div class="input-group" id="donation-type">
+            <label for="Type">Donation Type</label>
+            <select name="Type" id="Type">
+              <option disabled selected>Select a Donation type</option>
+              <option class="clinic-select" value="blood">🩸 Blood donation</option>
+              <option class="clinic-select" value="money">💵 Cash donation</option>
+            </select>
+          </div>
+
+          <div class="input-group" id="date" hidden>
+            <label for="date">Date & Time</label>
+            <input type="date" />
+          </div>
+
+          <div class="input-group" id="money" hidden>
+            <label for="Amount">Donation amount</label>
+            <input type="number" placeholder="ex: 100$" />
+          </div>
+
+          <button id="submit">Book now</button>
+        </form>
+      </div>
+    </div>
+    <script src="donations.js"></script>
+  </body>
+</html>

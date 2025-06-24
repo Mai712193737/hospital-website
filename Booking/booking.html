@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking</title>
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="booking.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="overlay">
+      <div class="form-container">
+        <h1>Booking</h1>
+        <form action="#" id="form">
+          <div class="input-group">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              placeholder="ex: John smith"
+            />
+          </div>
+
+          <!-- Password -->
+          <div class="input-group">
+            <label for="password">Mobile number</label>
+            <input
+              type="number"
+              placeholder="ex: 01145561234"
+            />
+          </div>
+
+          <div class="input-group">
+            <label for="clinic">Clinic</label>
+            <select name="clinic" id="clinic">
+                <option disabled selected>Select a clinic</option>
+                <option class="clinic-select">Pediatrics</option>
+                <option class="clinic-select">Obstetrics and Gynecology</option>
+                <option class="clinic-select">Dermatology </option>
+                <option class="clinic-select">Ophthalmology  </option>
+                <option class="clinic-select">Otolaryngology</option>
+                <option class="clinic-select">Cardiology</option>
+                <option class="clinic-select">internal medecine </option>
+                <option class="clinic-select">Neurology  </option>
+                <option class="clinic-select">Psychiatry  </option>
+                <option class="clinic-select">Dental  </option>
+                <option class="clinic-select">Urology  </option>
+                <option class="clinic-select">Gastroenterology  </option>
+                <option class="clinic-select">Endocrinology  </option>
+                <option class="clinic-select">Rheumatology   </option>
+                <option class="clinic-select">Nephrology   </option>
+                <option class="clinic-select">General Surgery   </option>
+                <option class="clinic-select">Family Medicine  </option>
+                <option class="clinic-select">Radiology</option>
+                <option class="clinic-select">Laboratory services</option>
+                <option class="clinic-select">Laboratory services</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label for="Doctor">Doctor</label>
+            <select name="clinic" id="clinic">
+                <option disabled selected>Select a doctor</option>
+                <option class="clinic-select">Dr. Ahmed Mohamed</option>
+                <option class="clinic-select">Dr. Abdallah Mohammed</option>
+                <option class="clinic-select">Dr. Omar Ahmed</option>
+                <option class="clinic-select">Dr. Sara Khaled</option>
+                <option class="clinic-select">Dr. Asmaa Ahmed</option>
+                <option class="clinic-select">Dr. Aml Ibrahem</option>
+            </select>
+          </div>
+
+          <div class="input-group">
+            <label for="date">Date & Time</label>
+            <input
+              type="date"
+              placeholder="ex: John smith"
+            />
+          </div>
+
+          <button id="submit">Book now</button>
+        </form>
+      </div>
+    </div>
+    <script src="booking.js"></script>
+  </body>
+</html>

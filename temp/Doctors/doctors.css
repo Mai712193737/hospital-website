@@ -1,0 +1,219 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  text-align: center;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("3.avif") center/cover no-repeat;
+  filter: blur(7px);
+  z-index: -1;
+}
+
+/* Header styling */
+.header-container {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  /* box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  /* backdrop-filter: blur(5px); */
+  justify-content: space-between;
+}
+
+/* Logo styling */
+header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+header .logo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+/* Navbar styling */
+header .main-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+}
+
+header ul li {
+  margin: 0;
+}
+
+header ul li a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: 25px;
+  color: #fff;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+header ul li a:hover {
+  background-color: #0056b3;
+  box-shadow: 0 8px 20px rgba(0, 86, 179, 0.6);
+}
+
+/* Page Title */
+.main-title {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+/* Doctors Container */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 100px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* Doctor Card */
+.doctor-card {
+  background: #ffffffcc;
+  border-radius: 15px;
+  box-shadow: 0 8px 24px rgba(0, 86, 179, 0.15);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.doctor-card:hover {
+  background-color: #fff;
+  transform: scale(1.05);
+}
+
+.doctor-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.doctor-card h2 {
+  margin-top: 15px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #000;
+}
+
+.specialty,
+.experience {
+  margin: 8px 0;
+  color: #000;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.book-btn {
+  margin-top: 20px;
+  background-color: #27ae60;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.book-btn:hover {
+  background-color: #219150;
+}
+
+/* Footer styling */
+.footer {
+  position: relative;
+  margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  /* backdrop-filter: blur(20px); */
+  /* box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); */
+}
+
+.footer .social {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 5px;
+}
+
+.footer .social li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #000;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer .social li:hover a {
+  color: #fff;
+}
+
+.fas {
+  margin-right: 6px;
+}
+
+.footer .copyright {
+  position: relative;
+  z-index: 1;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 22px;
+  color: #000;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.footer .copyright a {
+  text-decoration: none;
+  color: #000;
+  font-style: oblique;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.footer .copyright a:hover {
+  color: #fff;
+}
