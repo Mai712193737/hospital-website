@@ -6,39 +6,26 @@
 }
 
 body {
-  background-color: #f4f6f9;
-  color: #333;
-  line-height: 1.7;
+  background-image: url('12.jpg');
+  background-size: cover;
+  position: relative;
 }
 
-.container {
+body::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* لون فوق الصورة شفاف */
+}
+ 
+ .container {
   width: 90%;
   max-width: 1200px;
   margin: auto;
 }
 
-.main-header {
-  background-color: #0077b6;
-  padding: 10px 0;
-}
 
-.header-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  height: 40px;
-}
-
-.menu-btn {
-  background: none;
-  color: #fff;
-  font-size: 24px;
-  border: none;
-  cursor: pointer;
-}
 
 .success-path {
   background: linear-gradient(to left, #e0f7fa, #ffffff);
@@ -54,7 +41,7 @@ body {
 
 .success-path p {
   font-size: 18px;
-  color: #444;
+  color: #545252;
 }
 
 .statistics {
@@ -70,7 +57,7 @@ body {
 
 .stat-box {
   padding: 20px;
-  border-radius: 50%;
+  border-radius: 30%;
   border: 3px solid;
   width: 160px;
   height: 160px;
@@ -105,6 +92,32 @@ body {
   border-color: #346071;
 }
 
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+.photo img {
+  max-width: 250px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease;
+}
+
+.photo img:hover {
+  transform: scale(1.05);
+}
+
+
+
+
+
 .whatsapp-btn {
   position: fixed;
   bottom: 20px;
@@ -118,8 +131,16 @@ body {
 }
 
 @media (max-width: 500px) {
+ .photos{
+    
+    padding: 10px;
+    gap: 15px;
+ }
+.photo1 .photo2 .photo3 .photo4{
+max-width: 45%;
+}
   .stat-box {
-    width: 140px;
+        width: 140px;
     height: 140px;
   }
 
@@ -130,4 +151,5 @@ body {
   .success-path p {
     font-size: 16px;
   }
+}
 }
