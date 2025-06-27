@@ -2,64 +2,215 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>awareness</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Awareness</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="awareness.css" />
   </head>
   <body>
-    <section class="hero">
-      <div class="hero-overlay">
-        <h1>Be Aware!</h1>
-        <p>Help us raise awareness about the various health hazards</p>
-        <a href="https://www.health.harvard.edu/blog" target="_blank"
-          >Learn more</a
-        >
-      </div>
-    </section>
+    <div class="overlay">
+      <!-- Header -->
+      <header>
+        <div class="header" id="header">
+          <div class="container">
+            <a href="#" class="logo"><img src="../Home/Logo.jpg" /></a>
+            <ul class="main-nav">
+              <li>
+                <a href="../Home/home.html"
+                  ><i class="fa-solid fa-house"></i>Home</a
+                >
+              </li>
+              <li>
+                <a href="../Services/services.html"
+                  ><i class="fas fa-concierge-bell"></i>Services</a
+                >
+              </li>
+              <li>
+                <a href="../Lab/lab.html"><i class="fas fa-vials"></i>Lab</a>
+              </li>
+              <li>
+                <a href="../Pharmacy/pharmacy.html"
+                  ><i class="fas fa-pills"></i>Pharmacy</a
+                >
+              </li>
+              <li>
+                <a href="../Doctors/doctors.html"
+                  ><i class="fas fa-user-md"></i>Doctors</a
+                >
+              </li>
+              <li>
+                <a href="../Donations/donations.html"
+                  ><i class="fas fa-hand-holding-heart"></i>Donations</a
+                >
+              </li>
+              <li>
+                <a href="../Awareness/awareness.html"
+                  ><i class="fas fa-bullhorn"></i>Awareness</a
+                >
+              </li>
+              <li>
+                <a href="../achievments/achievments.html"
+                  ><i class="fas fa-trophy"></i>Achievements</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-overlay">
+          <h1>Be Aware!</h1>
+          <p>Help us raise awareness about various health hazards</p>
+          <a href="https://www.health.harvard.edu/blog" target="_blank"
+            >Learn more</a
+          >
+        </div>
+      </section>
 
-    <hr />
-    <div class="video-area">
-      <div class="video-float">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/3PmVJQUCm4E?si=jT8xKgaagka3Ld6v&autoplay=1"
-          title="YouTube video player"
-          frameborder="0"
-        ></iframe>
-      </div>
-      <div class="description">
-        <h2>Proper Hand Washing Technique</h2>
-        <p>
-          Learn how to wash your hands effectively in under 30 seconds. This
-          video demonstrates each step clearly, from applying soap to scrubbing
-          all surfaces and rinsing thoroughly. Proper hygiene helps prevent the
-          spread of germs and keeps you and others healthy.
+      <!-- Videos Section -->
+      <section class="videos-container">
+        <h2 class="section-title">Health Awareness Videos</h2>
+        <div class="videos-section">
+          <div class="video-box">
+            <div class="video-wrapper">
+              <iframe
+                src="https://www.youtube.com/embed/3PmVJQUCm4E"
+                title="Proper Hand Washing Technique"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="video-text">
+              <h3>Proper Hand Washing Technique</h3>
+              <p>
+                Learn how to wash your hands effectively in under 30 seconds.
+                This video demonstrates each step clearly, from applying soap to
+                scrubbing all surfaces and rinsing thoroughly.
+              </p>
+            </div>
+          </div>
+
+          <div class="video-box">
+            <div class="video-wrapper">
+              <iframe
+                src="https://www.youtube.com/embed/QDhFYPsewFY"
+                title="How to Cover a Sneeze or Cough"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="video-text">
+              <h3>How to Cover a Sneeze or Cough</h3>
+              <p>
+                Covering your sneeze or cough properly is essential to prevent
+                the spread of germs. This video demonstrates the correct
+                technique using a tissue or your elbow.
+              </p>
+            </div>
+          </div>
+
+          <div class="video-box">
+            <div class="video-wrapper">
+              <iframe
+                src="https://www.youtube.com/embed/5SproXmRUkI?si=sQVqsAEv7EvgQ3_R"
+                title="Importance of Vaccinations"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="video-text">
+              <h3>Importance of Vaccinations</h3>
+              <p>
+                This video explains why vaccinations are crucial for preventing
+                diseases and protecting public health.
+              </p>
+            </div>
+          </div>
+
+          <div class="video-box">
+            <div class="video-wrapper">
+              <iframe
+                src="https://www.youtube.com/embed/c06dTj0v0sM"
+                title="Healthy Eating Tips"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="video-text">
+              <h3>Healthy Eating Tips</h3>
+              <p>
+                Learn simple and effective tips for maintaining a balanced and
+                healthy diet to improve your overall well-being.
+              </p>
+            </div>
+          </div>
+          <div class="video-box">
+            <div class="video-wrapper">
+              <iframe
+                src="https://www.youtube.com/embed/XVYn2AoSneA"
+                title="Hand Hygiene Importance"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="video-text">
+              <h3>Hand Hygiene Importance</h3>
+              <p>
+                A detailed guide on why hand hygiene is critical for health and
+                safety.
+              </p>
+            </div>
+          </div>
+
+          <div class="video-box">
+            <div class="video-wrapper">
+              <iframe
+                src="https://www.youtube.com/embed/Cg_GW7yhq20"
+                title="Healthy Lifestyle Tips"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="video-text">
+              <h3>Healthy Lifestyle Tips</h3>
+              <p>
+                Tips and tricks to maintain a healthy lifestyle and improve your
+                well-being.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <ul class="social">
+          <li>
+            <a href="#"><i class="fas fa-info-circle"></i> About Us</a>
+          </li>
+          <li>
+            <a href="../contact/contact.html"
+              ><i class="fas fa-phone"></i> Contact Us</a
+            >
+          </li>
+          <li>
+            <a href="../FAQ/FAQ.html"
+              ><i class="fas fa-question-circle"></i> FAQ</a
+            >
+          </li>
+        </ul>
+        <p class="copyright">
+          &copy; 2025 <a href="#">Al Shifaa Hospital</a> All Rights Reserved
         </p>
-      </div>
+      </footer>
     </div>
-    <hr />
-    <div class="video-area">
-      <div class="video-float">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/QDhFYPsewFY?si=ILmDfW6QaSOEXwCY&autoplay=1"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-      </div>
-      <div class="description">
-        <h2>How to cover a sneeze or cough</h2>
-        <p>
-        Covering your sneeze or cough properly is essential to prevent the spread of germs. This video demonstrates the correct technique using a tissue or your elbow, ensuring that you protect those around you and maintain good hygiene practices.
-        </p>
-      </div>
-    </div>
-    <hr>
-    <script src="awareness.js"></script>
   </body>
 </html>

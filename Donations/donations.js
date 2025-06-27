@@ -14,11 +14,11 @@ form.addEventListener("submit", (e) => {
   });
 
   if (!valid) {
-    e.preventDefault();
     alert("Please fill in all fields.");
+    e.preventDefault();
   } else {
     e.preventDefault();
-    alert("booking finished successfully!");
+    alert("Donation finished successfully!");
     window.location.href = "../Home/home.html";
   }
 });
@@ -37,7 +37,11 @@ donation.addEventListener("change", (e) => {
 });
 
 function checkInput(input) {
-  if (!input.disabled && input.value.trim() === "") {
+  if (input.offsetParent === null || input.disabled) {
+    return true;
+  }
+
+  if (input.value.trim() === "") {
     input.style.borderColor = "red";
     return false;
   } else {

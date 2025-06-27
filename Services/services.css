@@ -1,0 +1,489 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling with blurred background using pseudo-element */
+body {
+  position: relative;
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  color: #fff;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("background.webp") center/cover no-repeat;
+  filter: blur(4px);
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.overlay {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(32, 31, 31, 0.75);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px 20px 80px;
+  box-sizing: border-box;
+}
+
+/* Header styling */
+.header .container {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+header .logo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+header .main-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-left: 40px;
+}
+
+header ul li a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: 25px;
+  color: #fff;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+header ul li a:hover {
+  background-color: #007bff;
+  box-shadow: 0 6px 15px rgba(0, 123, 255, 0.5);
+}
+
+/* Section Styling */
+.section {
+  padding: 60px 20px;
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* Section Title */
+.section-title {
+  text-align: center;
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  padding-bottom: 8px;
+  transform: translateY(-10px);
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 650px;
+  height: 3px;
+  background-color: #007bff;
+  margin: 8px auto 0 auto;
+  border-radius: 2px;
+}
+
+.hero-section {
+  padding: 60px 20px;
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  margin: 20px auto 40px;
+  max-width: 700px;
+  line-height: 1.6;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.hero-highlights {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.hero-highlights div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background: rgba(0, 123, 255, 0.2);
+  padding: 12px 20px;
+  border-radius: 30px;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+  color: #cce4ff;
+  transition: 0.3s all ease;
+}
+
+.hero-highlights div i {
+  font-size: 1.4rem;
+  color: #007bff;
+}
+
+.hero-highlights div:hover {
+  background: rgba(0, 123, 255, 0.5);
+  color: #fff;
+  cursor: default;
+}
+
+.hero-cta {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 14px 40px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(0, 123, 255, 0.6);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-cta:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 86, 179, 0.7);
+}
+
+/* Clinics grid */
+.clinics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+  margin-top: 20px;
+}
+
+.clinic-item {
+  background: rgba(0, 123, 255, 0.15);
+  color: #cce4ff;
+  padding: 18px 20px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+  text-align: center;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+  user-select: none;
+}
+
+.clinic-item:hover {
+  background: #0056b3;
+  color: #fff;
+}
+/* Features Section */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.feature-card {
+  background: rgba(255, 255, 255, 0.95);
+  color: #333;
+  padding: 25px 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Why Al-Shifa list */
+.why-list {
+  list-style: none;
+  max-width: 700px;
+  margin: 0 auto;
+  padding-left: 0;
+  color: #eee;
+  font-size: 1.15rem;
+  line-height: 1.8;
+}
+
+.why-list li {
+  background: rgba(0, 123, 255, 0.15);
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 123, 255, 0.3);
+  transition: background-color 0.3s ease;
+}
+.why-list li strong {
+  color: #007bff;
+  font-weight: 700;
+}
+
+.why-list li:hover {
+  background: #0056b3;
+  color: #fff;
+}
+
+/* Call to action section */
+.before-footer {
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+  border-radius: 12px;
+  background: rgba(0, 88, 181, 0.15);
+  box-shadow: 0 3px 10px rgba(0, 123, 255, 0.3);
+  transition: 0.3s all ease-out;
+}
+
+.before-footer:hover {
+  transform: translateY(-4px);
+  background: #0056b3;
+}
+
+.before-footer h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.btn {
+  display: inline-block;
+  background: white;
+  color: #007bff;
+  padding: 14px 36px;
+  margin-top: 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 86, 179, 0.5);
+}
+
+.btn:hover {
+  background: white;
+  color: #0056b3;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 86, 179, 0.7);
+}
+
+/* Footer styling */
+.footer {
+  position: relative;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+.footer .social {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 5px;
+}
+
+.footer .social li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer .social li:hover a {
+  color: #007bff;
+}
+
+.fas {
+  margin-right: 6px;
+}
+
+.footer .copyright {
+  position: relative;
+  z-index: 1;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 22px;
+  color: #fff;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.footer .copyright a {
+  text-decoration: none;
+  color: #fff;
+  font-style: oblique;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.footer .copyright a:hover {
+  color: #007bff;
+}
+
+/* Responsive: Tablets and Below */
+@media (max-width: 991px) {
+  .header .container {
+    flex-direction: column;
+    height: auto;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .main-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-left: 0;
+  }
+
+  .main-nav li {
+    width: 100%;
+  }
+
+  .hero-highlights {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .clinics-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    padding: 0 10px;
+  }
+
+  .section-title::after {
+    width: 60%;
+  }
+
+  .why-list {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .feature-card {
+    padding: 20px 15px;
+  }
+
+  .btn {
+    padding: 12px 28px;
+    font-size: 1rem;
+  }
+}
+
+/* Responsive: Mobiles */
+@media (max-width: 576px) {
+  .main-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-left: 0;
+  }
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .hero-highlights div {
+    font-size: 1rem;
+    padding: 10px 16px;
+  }
+
+  .clinics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .clinic-item {
+    font-size: 1rem;
+    padding: 14px;
+  }
+
+  .why-list {
+    font-size: 0.95rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .footer .social {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .footer .copyright {
+    font-size: 18px;
+    padding: 10px;
+  }
+}
